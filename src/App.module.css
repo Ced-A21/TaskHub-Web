@@ -37,6 +37,9 @@
   flex-direction:row;
   align-items:center;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1030;
   
   
 
@@ -115,10 +118,12 @@ nav{
   margin-top:2px;
   background-color:#541554;
   min-width:1438px;
-  min-height:95vh;
+  min-height: 1000px;
+  max-height:95vh;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
   
 
 }
@@ -167,6 +172,7 @@ h1{
   display:flex;
   flex-direction:row;
   margin-top:26px;
+  justify-content: flex-end;
   
 
 }
@@ -176,11 +182,166 @@ h1{
   height:56px;
   border-radius:5px;
   border-style: none;
-  margin-left:22px;
   color:#541554;
   font-weight:bold;
   font-size:15px;
   font-family: 'Poppins';
   cursor:pointer;
-  ;
+  
+}
+
+.GoogleBtn{
+  width:239px;
+  height:56px;
+  border-radius:5px;
+  border-style: none;
+  margin-left:22px;
+  color:white;
+  background-color: #4285F4;
+  font-weight:bold;
+  font-size:15px;
+  font-family: 'Poppins';
+  cursor:pointer;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.GoogolImg{
+  margin-right:5px;
+  background-color: white;
+  border-radius:5px;
+}
+
+.CompanySection{
+  min-width: 100%;
+  min-height:288px;
+  display:flex;
+  flex-direction: column;
+}
+
+h2{
+  font-family: 'Poppins';
+  font-size: 24px;
+}
+
+.CompanyH2{
+  display:flex;
+  justify-content: center;
+  margin-top:92px;
+  font-style: normal;
+}
+
+.CompanyLogos{
+  margin-top:37px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:68px;
+}
+
+.CompanyImgs{
+  margin-right:37px;
+  display:flex;
+}
+
+.FeatureSection{
+  min-width: 100%;
+  min-height:550px;
+  background-color:#F7F7F6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.FeatureH2{
+  font-size: 20px;
+  font-family: 'Poppins';
+  color:#ECB22E;
+  font-style: normal;
+}
+
+.FeatureH1{
+  font-family: 'Poppins';
+  font-size: 44px;
+  color:black;
+  font-weight: bold;
+}
+
+.FeatureDesc{
+  color:#646464;
+  font-family: 'Poppins';
+  font-size: 18px;
+}
+
+.FeatureBtn{
+  background-color:#773977;
+  color: white;
+  border-style:none;
+  width:165px;
+  height: 39px;
+  border-radius: 5px;
+  margin-top: 26px;
+  cursor:pointer;
+  font-family: 'Poppins';
+  font-size: 15px;
+
+}
+.VirtualMeetingBox{
+  background-color: white;
+  width:230px;
+  height: 219px;
+  border: 1px solid #C3C3C3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-bottom: 68px;
+
+
+}
+.MarketingBox{
+  margin-bottom: 14px;;
+  background-color: white;
+  width:230px;
+  height: 219px;
+  border: 1px solid #C3C3C3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+}
+
+.ManagementBox{
+  background-color: white;
+  width:230px;
+  height: 219px;
+  border: 1px solid #C3C3C3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-bottom: 45px;
+  
+}
+
+.HelpDeskBox{
+  background-color: white;
+  width:230px;
+  height: 219px;
+  border: 1px solid #C3C3C3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin-bottom: 16px;
+
+}
+
+.FeatureH3{
+  font-family: 'Poppins';
+  font-size:15px;
+
+}
+
+.FeatureBoxLayout{
+  margin-top: 20px;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

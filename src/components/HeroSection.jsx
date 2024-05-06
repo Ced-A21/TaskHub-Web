@@ -17,10 +17,13 @@ const Hero = () => {
                     <button className={styles.HeroBtn1}>
                         SIGN UP WITH EMAIL
                     </button>
-                    <button>
-                        <img src={Googol} alt="google logo"/><span>SIGN UP WITH GOOGLE</span>
+                    <button className={styles.GoogleBtn}>
+                        <img className={styles.GoogolImg} src={Googol} alt="google logo"/><span>SIGN UP WITH GOOGLE</span>
                     </button>
                 </div>
+                <p style={{color: 'white', fontFamily:'Poppins', fontSize:15, marginTop: 21}}>
+                    Taskhub is free to try for a long as you’d like.
+                </p>
             </div>
             <div className={styles.HeroPicture}>
                 <img src={HeroPic} alt="Hero Logo"/>
