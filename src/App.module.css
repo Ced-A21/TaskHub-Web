@@ -1,0 +1,93 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.divButtons{
+  display:flex;
+  flex-direction: row;
+  
+}
+
+.navBarBase{
+  background-color: #541554;
+  min-width:100%;
+  min-height:80px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: center;
+  
+  
+
+}
+
+.NavBarList1{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: space-around;
+  margin-left:46px;
+  list-style: none;
+
+
+
+}
+.NavBarList2{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: space-around;
+  margin-left:106px;
+  list-style: none;
+
+
+
+}
+li{
+  padding:19px;
+  color:white;
+  font-family: 'Poppins';
+  font-size:16px;
+  display:flex;
+  flex-direction: row;
+}
+
+
+.logoPosition{
+  width: 151px;
+  height: 36px;
+  left: 136px;
+  top: 20px;
+}
+
+.downArrowNav{
+  display:flex;
+  align-items: center;
+  
+}
+
+nav{
+  display:flex;
+  flex-direction: row;
+}
