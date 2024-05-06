@@ -44,8 +44,8 @@ function NavBar() {
                 <li>
                     Log In
                 </li>
-                <button>
-
+                <button className={styles.getTaskHubBtn}>
+                    Get Taskhub Free
                 </button>
             </ul>
         </nav>
