@@ -366,3 +366,17 @@ h2{
   align-items: center;
   justify-content: center;
 }
+
+.BizTools{
+  display:flex;
+  flex-direction:row;
+  min-width:1440px;
+  min-height:657px;
+  background-color:white;
+  align-items: center;
+  justify-content: center;
+}
+
+.BizToolLayout{
+  display:flex;
+}

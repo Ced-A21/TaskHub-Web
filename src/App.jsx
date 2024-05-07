@@ -4,6 +4,8 @@ import NavBar from "./components/navbar";
 import Hero from "./components/HeroSection";
 import Company from "./components/Companies"
 import Feature from "./components/Features";
+import BizTool from "./components/BusinessTools";
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         <Hero/>
         <Company/>
         <Feature/>
+        <BizTool/>
     </div>
   );
 }
