@@ -19,7 +19,7 @@ function Numbers(){
                     Registered Users
                 </h2>
             </div>
-            <div className={styles.statisticLayout}>
+            <div className={styles.statisticLayout} style={{marginRight:0}}>
                 <h1 style={{color:'#773977', fontSize:48}}>
                     23k
                 </h1>
