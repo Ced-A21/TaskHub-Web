@@ -5,7 +5,7 @@ import Hero from "./components/HeroSection";
 import Company from "./components/Companies"
 import Feature from "./components/Features";
 import BizTool from "./components/BusinessTools";
-
+import Numbers from "./components/Statistic";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
         <Company/>
         <Feature/>
         <BizTool/>
+        <Numbers/>
     </div>
   );
 }
