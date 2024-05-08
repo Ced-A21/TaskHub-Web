@@ -398,3 +398,52 @@ h2{
   align-items: center;
   margin-right: 130px;
 }
+
+.TestimonialSect{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 1440px;
+  min-height: 840px;
+}
+
+.TestimonialConts{
+  width:573px;
+  height:429px;
+  background-color: #F7F7F6;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.pic1{
+
+  position:relative;
+  width: 176px;
+  height: 176px;
+  display:flex;
+  top:-78px;
+ 
+
+  background: url(./images/testPic.png);
+}
+
+.pic2{
+  position: relative;
+
+  width: 176px;
+  height: 176px;
+  display:flex;
+  top:-78px;
+ 
+
+  background: url(./images/testPic2.png);
+}
+
+.TestimonialDesc{
+  position:relative;
+  top:-60px;
+}
