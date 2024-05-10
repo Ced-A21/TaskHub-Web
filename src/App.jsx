@@ -9,6 +9,7 @@ import Numbers from "./components/Statistic";
 import Testimonials from "./components/Testimonial";
 import Questions from "./components/FAQ";
 import Discovery from "./components/Discover";
+import FooteR from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Testimonials/>
         <Questions/>
         <Discovery/>
+        <FooteR/>
     </div>
   );
 }
