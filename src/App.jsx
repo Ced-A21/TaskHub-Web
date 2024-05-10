@@ -7,6 +7,8 @@ import Feature from "./components/Features";
 import BizTool from "./components/BusinessTools"; 
 import Numbers from "./components/Statistic";
 import Testimonials from "./components/Testimonial";
+import Questions from "./components/FAQ";
+import Discovery from "./components/Discover";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <BizTool/>
         <Numbers/>
         <Testimonials/>
+        <Questions/>
+        <Discovery/>
     </div>
   );
 }
