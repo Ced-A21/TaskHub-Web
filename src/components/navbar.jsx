@@ -2,6 +2,15 @@ import styles from "../App.module.css"
 import logo from "../images/logo.png"
 // import "../App.css"
 function NavBar() {
+    const showSideBar = () => { // Corrected function name and syntax
+        const sidebar = document.querySelector('.'+styles.sidebar); // Corrected selector
+        sidebar.style.display = 'flex';
+    };
+
+    const hideSideBar = () => {
+        const sidebar = document.querySelector('.'+styles.sidebar); // Corrected selector
+        sidebar.style.display = 'none';
+    }
     return(
        <header className={styles.navBarBase}>
         <div className={styles.logoPosition}>
@@ -48,9 +57,41 @@ function NavBar() {
                     Get Taskhub Free
                 </button>
             </ul>
+            <li className={styles.burgerbutton}onClick={showSideBar}>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </li>
+            <ul className={styles.sidebar}>
+                <li onClick={hideSideBar}>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </li>
+                <li>
+                    Product
+                </li>
+                <li>
+                    Download
+                </li>
+                <li>
+                    Solutions
+                </li>
+                <li>
+                    Resources
+                </li>
+                <li>
+                    Pricing
+                </li>
+                <li>
+                    Request a Demo
+                </li>
+                <li>
+                    Log in
+                </li>
+        
+            </ul>
         </nav>
        </header>
     )
 };
+
+
 
 export default NavBar ;

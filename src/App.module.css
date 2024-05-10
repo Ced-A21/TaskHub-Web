@@ -1,7 +1,22 @@
 *{
   margin:0;
   padding:0;
+  box-sizing: border-box;
+
 }
+
+html, body{
+  overflow-x: hidden;
+}
+body{
+  width:100%;
+  position: relative;
+}
+img{
+  max-width: 100%;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -26,7 +41,7 @@
 .divButtons{
   display:flex;
   flex-direction: row;
-  
+
 }
 
 .navBarBase{
@@ -39,9 +54,9 @@
   justify-content: center;
   position: fixed;
   top: 0;
-  z-index: 1030;
-  
-  
+
+
+
 
 }
 
@@ -65,9 +80,13 @@
   list-style: none;
 
 
-
 }
 li{
+  list-style: none;
+  display:flex;
+
+}
+nav li{
   padding:19px;
   color:white;
   font-family: 'Poppins';
@@ -75,19 +94,70 @@ li{
   display:flex;
   flex-direction: row;
 }
+.burgerbutton{
+  display:none;
+}
+
+.sidebar{
+  position:fixed;
+  top:0;
+  right:0;
+  height:100vh;
+  width:200px;
+  z-index: 999;
+  background-color:#ac2baca5;
+  box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+  display:none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+
+
+}
+
+
+
+
+
+.sidebar li{
+  width: 100%;
+}
 
 
 .logoPosition{
   width: 151px;
   height: 36px;
-  left: 136px;
-  top: 20px;
 }
+
+@media (max-width: 475px) {
+  .NavBarList1, .NavBarList2{
+    display:none
+  }
+  .navBarBase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav{
+    display: flex;
+    justify-content: end;
+  }
+  .burgerbutton{
+    display: flex;
+    margin-left:160px;
+  }
+
+
+}
+
+
+
 
 .downArrowNav{
   display:flex;
   align-items: center;
-  
+
 }
 
 nav{
@@ -125,7 +195,7 @@ nav{
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  
+
 
 }
 
@@ -174,8 +244,8 @@ h1{
   flex-direction:row;
   margin-top:26px;
   justify-content: flex-end;
-  
-  
+
+
 
 }
 
@@ -189,7 +259,7 @@ h1{
   font-size:15px;
   font-family: 'Poppins';
   cursor:pointer;
-  
+
 }
 .HeroBtn1:hover{
   background-color:#AC2BAC;
@@ -339,7 +409,7 @@ h2{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   margin-bottom: 45px;
-  
+
 }
 
 .HelpDeskBox{
@@ -426,7 +496,7 @@ h2{
   height: 176px;
   display:flex;
   top:-78px;
- 
+
 
   background: url(./images/testPic.png);
 }
@@ -438,7 +508,7 @@ h2{
   height: 176px;
   display:flex;
   top:-78px;
- 
+
 
   background: url(./images/testPic2.png);
 }
@@ -479,7 +549,7 @@ h2{
   flex-direction: row;
   align-items: center;
   border-style: none;
-  
+
 }
 
 .ClickableFAQ{
