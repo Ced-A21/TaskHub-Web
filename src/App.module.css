@@ -288,105 +288,6 @@ h1{
   justify-content: center;
 }
 
-@media (max-width: 770px){
-
-  .HeroSection{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 770px;
-  }
-  .HeroHeader{
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom:30vh
-  }
-  .NavBarList1, .NavBarList2{
-    display:none
-  }
-
-  .burgerbutton{
-    display: flex;
-  }
-
-  .navBarBase{
-    justify-content: space-between;
-  }
-  .logoPosition{
-    margin-left: 30px;
-  }
-
-  .HeroPicture{
-    display:none;
-  }
-
-  h1{
-    font-size:40px;
-  }
-  
-}
-
-
-@media (max-width: 475px) {
-  .HeroHeader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 475px;
-  }
-
-  .NavBarList1, .NavBarList2{
-    display:none
-  }
-  .navBarBase{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .nav{
-    display: flex;
-    justify-content: end;
-  }
-  .burgerbutton{
-    display: flex;
-    margin-left:140px;
-  }
-
-  h1{
-    font-size:30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .HeroP{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 10px;
-  }
-  .HeroBtn1{
-    width:150px;
-    height: 55px;
-    font-size: 10px;
-  }
-  
-  .GoogleBtn{
-    width:150px;
-    height: 55px;
-    font-size: 10px;
-  }
-
-
-
-
-}
 
 .CompanySection{
   min-width: 100%;
@@ -419,6 +320,8 @@ h2{
   margin-right:37px;
   display:flex;
 }
+
+
 
 .FeatureSection{
   min-width: 100%;
@@ -525,6 +428,176 @@ h2{
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+
+.FeatureHeader{
+  margin-right:173px;
+}
+
+.MarketMeetingMobileLayout{
+  display: flex;
+  flex-direction: column;
+  margin-right: 14px;
+}
+
+
+@media (max-width: 770px){
+  .MarketingBox, .ManagementBox, .VirtualMeetingBox,.HelpDeskBox{
+    width:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .VirtualMeetingBox{
+    margin-bottom: 0px;
+  }
+
+  .MarketMeetingMobileLayout{
+    margin-right: 0px;
+  }
+
+  .FeatureDesc{
+    font-size: 13px;
+  }
+  .FeatureBtn{
+    margin-bottom: 40px;
+  }
+
+  .FeatureHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 0;
+  }
+
+  .FeatureSection{
+    max-width: 770px;
+    flex-direction: column;
+  }
+  .CompanySection{
+    max-width:770px;
+  }
+
+  .HeroSection{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 770px;
+  }
+  .HeroHeader{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom:30vh
+  }
+  .NavBarList1, .NavBarList2{
+    display:none
+  }
+
+  .burgerbutton{
+    display: flex;
+  }
+
+  .navBarBase{
+    justify-content: space-between;
+  }
+  .logoPosition{
+    margin-left: 30px;
+  }
+
+  .HeroPicture{
+    display:none;
+  }
+
+  h1{
+    font-size:40px;
+  }
+  
+}
+
+
+@media (max-width: 475px) {
+
+  .MarketingBox, .ManagementBox, .VirtualMeetingBox,.HelpDeskBox{
+    width:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .MarketMeetingMobileLayout{
+    margin-right: 0px;
+  }
+  .VirtualMeetingBox{
+    margin-bottom: 0px;
+  }
+
+  .CompanyH2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .HeroHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 475px;
+  }
+
+  .NavBarList1, .NavBarList2{
+    display:none
+  }
+  .navBarBase{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav{
+    display: flex;
+    justify-content: end;
+  }
+  .burgerbutton{
+    display: flex;
+    margin-left:140px;
+  }
+
+  h1{
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .HeroP{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 10px;
+  }
+  .HeroBtn1{
+    width:150px;
+    height: 55px;
+    font-size: 10px;
+  }
+  
+  .GoogleBtn{
+    width:150px;
+    height: 55px;
+    font-size: 10px;
+  }
+
+
+
+
 }
 
 .BizTools{

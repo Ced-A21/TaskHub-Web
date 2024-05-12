@@ -3,7 +3,7 @@ import styles from "../App.module.css"
 const Feature = () => {
     return(
         <section className={styles.FeatureSection}>
-            <div style={{marginRight:173}}>
+            <div className={styles.FeatureHeader}>
                 <h2 className={styles.FeatureH2}>
                     Features
                 </h2>
@@ -18,7 +18,7 @@ const Feature = () => {
                 </p>
                 <button className={styles.FeatureBtn}>Get Started</button>
             </div>
-            <div style={{display:'flex', flexDirection:'column', marginRight:14}}>
+            <div className={styles.MarketMeetingMobileLayout}>
                 <div className={styles.MarketingBox} style={{}}>
                     <div className={styles.FeatureBoxLayout} style={{width:59, height:54, borderRadius:5, backgroundColor:'#EE0011'}}>
                         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
