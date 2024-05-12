@@ -132,45 +132,6 @@ nav li{
   float: left;
 }
 
-@media (max-width: 770px){
-  .NavBarList1, .NavBarList2{
-    display:none
-  }
-
-
-  .burgerbutton{
-    display: flex;
-  }
-
-  .navBarBase{
-    justify-content: space-between;
-  }
-  .logoPosition{
-    margin-left: 30px;
-  }
-}
-
-
-@media (max-width: 475px) {
-  .NavBarList1, .NavBarList2{
-    display:none
-  }
-  .navBarBase{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .nav{
-    display: flex;
-    justify-content: end;
-  }
-  .burgerbutton{
-    display: flex;
-    margin-left:160px;
-  }
-
-
-}
 
 
 
@@ -209,13 +170,16 @@ nav{
   display:flex;
   margin-top:2px;
   background-color:#541554;
-  min-width:1438px;
   min-height: 1000px;
   max-height:95vh;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   max-width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+  
 
 
 }
@@ -317,6 +281,73 @@ h1{
   margin-right:5px;
   background-color: white;
   border-radius:5px;
+}
+
+.HeroBottomP{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 770px){
+
+  .HeroSection{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 770px;
+  }
+  .HeroHeader{
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom:30vh
+  }
+  .NavBarList1, .NavBarList2{
+    display:none
+  }
+
+  .burgerbutton{
+    display: flex;
+  }
+
+  .navBarBase{
+    justify-content: space-between;
+  }
+  .logoPosition{
+    margin-left: 30px;
+  }
+
+  .HeroPicture{
+    display:none;
+  }
+
+  h1{
+    font-size:40px;
+  }
+  
+}
+
+
+@media (max-width: 475px) {
+  .NavBarList1, .NavBarList2{
+    display:none
+  }
+  .navBarBase{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav{
+    display: flex;
+    justify-content: end;
+  }
+  .burgerbutton{
+    display: flex;
+    margin-left:160px;
+  }
+
+
 }
 
 .CompanySection{

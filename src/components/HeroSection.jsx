@@ -21,7 +21,7 @@ const Hero = () => {
                         <img className={styles.GoogolImg} src={Googol} alt="google logo"/><span>SIGN UP WITH GOOGLE</span>
                     </button>
                 </div>
-                <p style={{color: 'white', fontFamily:'Poppins', fontSize:15, marginTop: 21}}>
+                <p  className={styles.HeroBottomP}style={{color: 'white', fontFamily:'Poppins', fontSize:15, marginTop: 21}}>
                     Taskhub is free to try for a long as you’d like.
                 </p>
             </div>
