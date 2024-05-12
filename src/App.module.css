@@ -128,7 +128,28 @@ nav li{
 .logoPosition{
   width: 151px;
   height: 36px;
+  position:relative;
+  float: left;
 }
+
+@media (max-width: 770px){
+  .NavBarList1, .NavBarList2{
+    display:none
+  }
+
+
+  .burgerbutton{
+    display: flex;
+  }
+
+  .navBarBase{
+    justify-content: space-between;
+  }
+  .logoPosition{
+    margin-left: 30px;
+  }
+}
+
 
 @media (max-width: 475px) {
   .NavBarList1, .NavBarList2{
@@ -136,7 +157,7 @@ nav li{
   }
   .navBarBase{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
   .nav{
