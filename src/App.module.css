@@ -54,6 +54,7 @@ img{
   justify-content: center;
   position: fixed;
   top: 0;
+  z-index:999
 
 
 
@@ -442,7 +443,102 @@ h2{
 }
 
 
+
+.BizToolHeader{
+  margin-left:42px;
+  background-color: white;
+}
+
+
+
+.BizTools{
+  display:flex;
+  flex-direction:row;
+  min-height:657px;
+  background-color:white;
+  align-items: center;
+  justify-content: center;
+}
+
+.BizToolLayout{
+  display:flex;
+}
+
+.BizToolHeader h1{
+  color:black;
+  font-family: 'Poppins';
+  font-size:44px;
+  
+}
+
+.BizToolHeader h2{
+  color:#773977;
+  font-size: 28px;
+}
+
+
+
+
+.statistics{
+  min-height: 260px;
+  background-color: #F7F7F6;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.statisticLayout{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 130px;
+}
+
+.statisticLayout h1{
+  font-size: 48px;
+  color:#773977;
+}
+
+
 @media (max-width: 770px){
+  .statistics{
+    max-width: 770px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .statisticLayout h2{
+    font-size: 18px;
+  }
+  .statisticLayout h1{
+    font-size:30px;
+  }
+
+  .statisticLayout{
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+  .BizToolHeader{
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .BizTools{
+    width:770px;
+  }
+
+  .BizToolLogo{
+    display:none;
+  }
+
   .MarketingBox, .ManagementBox, .VirtualMeetingBox,.HelpDeskBox{
     width:500px;
     display: flex;
@@ -519,8 +615,56 @@ h2{
   
 }
 
-
 @media (max-width: 475px) {
+  .statistics{
+    max-width: 475px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .statisticLayout h2{
+    font-size: 13px;
+  }
+  .statisticLayout h1{
+    font-size:25px;
+  }
+
+  .statisticLayout{
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+
+  .BizToolHeader{
+    margin-left: 0px;
+    display: flex;
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 12px;
+  
+    
+  }
+
+  .BizToolHeader h1{
+    font-size:30px;
+  }
+
+  .BizToolHeader h2{
+    font-size: 20px;
+  }
+  .BizTools{
+    width:450px;
+  }
+
+  .BizToolLogo{
+    display:none;
+  }
 
   .MarketingBox, .ManagementBox, .VirtualMeetingBox,.HelpDeskBox{
     width:400px;
@@ -594,43 +738,8 @@ h2{
     height: 55px;
     font-size: 10px;
   }
-
-
-
-
 }
 
-.BizTools{
-  display:flex;
-  flex-direction:row;
-  min-width:1440px;
-  min-height:657px;
-  background-color:white;
-  align-items: center;
-  justify-content: center;
-}
-
-.BizToolLayout{
-  display:flex;
-}
-
-.statistics{
-  min-width:1440px;
-  min-height: 260px;
-  background-color: #F7F7F6;
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.statisticLayout{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-right: 130px;
-}
 
 .TestimonialSect{
   display:flex;

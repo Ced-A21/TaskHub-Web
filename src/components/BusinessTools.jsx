@@ -7,14 +7,14 @@ const BizTool = () => {
             <div className={styles.BizToolLogo} style={{marginBottom:56}}>
                 <img src={BizLogo} alt="Business Tool"/>
             </div>
-            <div style={{backgroundColor:'white', marginLeft:42}}>
+            <div className={styles.BizToolHeader}>
                 <h3 style={{color:'#ECB22E', fontFamily:'Poppins', fontSize:20}}>
                     Business Tools
                 </h3>
-                <h1 style={{color:'black', fontSize:44, fontFamily:'Poppins'}}>
+                <h1>
                     Useful Features
                 </h1>
-                <h2 style={{color:'#773977', fontSize:28}}>
+                <h2>
                     Team Management
                 </h2>
                 <p style={{color:'#646464', fontFamily:'Poppins', marginTop:13}}>
