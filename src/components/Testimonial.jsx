@@ -3,16 +3,16 @@ import styles from "../App.module.css"
 function Testimonials(){
     return(
         <section className={styles.TestimonialSect}>
-            <div style={{display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
-                <p style={{color:'#ECB22E', fontFamily:'Poppins', fontSize:20}}>
+            <div style={{display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'column'}} className={styles.TestimonialHeader}>
+                <p>
                     Testimonials
                 </p>
                 <h1 style={{color:'black'}}>
                     What our Client Says 
                 </h1>
             </div>
-            <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center', marginTop:132}}>
-                <div className={styles.TestimonialConts} style={{marginRight:20}}>
+            <div className={styles.ClientHeader}>
+                <div className={styles.TestimonialConts}>
                     <div className={styles.pic1} style={{position:'relative'}}>
                         
                     </div>

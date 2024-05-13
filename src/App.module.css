@@ -502,12 +502,87 @@ h2{
 }
 
 
+.TestimonialSect{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 840px;
+}
+
+.TestimonialConts{
+  width:573px;
+  height:429px;
+  background-color: #F7F7F6;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+
+}
+
+.pic1{
+
+  position:relative;
+  width: 176px;
+  height: 176px;
+  display:flex;
+  top:-78px;
+
+
+  background: url(./images/testPic.png);
+}
+
+.pic2{
+  position: relative;
+
+  width: 176px;
+  height: 176px;
+  display:flex;
+  top:-78px;
+
+
+  background: url(./images/testPic2.png);
+}
+
+.TestimonialDesc{
+  position:relative;
+  top:-60px;
+}
+
+.ClientHeader{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  margin-top: 132px;
+}
+
+.TestimonialHeader p {
+  color:#ECB22E;
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+
 @media (max-width: 770px){
+  .ClientHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .TestimonialConts{
+    margin-bottom: 20px;
+  }
   .statistics{
     max-width: 770px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: column;
   }
   .statisticLayout h2{
     font-size: 18px;
@@ -532,7 +607,7 @@ h2{
     flex-direction: column;
   }
   .BizTools{
-    width:770px;
+    max-width:770px;
   }
 
   .BizToolLogo{
@@ -577,6 +652,10 @@ h2{
     max-width:770px;
   }
 
+  .CompanyH2{
+    text-align: center;
+  }
+
   .HeroSection{
     display: flex;
     justify-content:center;
@@ -616,6 +695,32 @@ h2{
 }
 
 @media (max-width: 475px) {
+
+  .TestimonialConts{
+    width:350px
+
+  }
+  .TestimonialHeader p{
+    margin-top:20px;
+  }
+
+  .TestimonialHeader h1{
+    font-size: 25px;
+  }
+  .ClientHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+
+  .TestimonialConts{
+    margin-bottom: 20px;
+  }
+
   .statistics{
     max-width: 475px;
     display: flex;
@@ -659,7 +764,7 @@ h2{
     font-size: 20px;
   }
   .BizTools{
-    width:450px;
+    max-width:450px;
   }
 
   .BizToolLogo{
@@ -720,6 +825,16 @@ h2{
     flex-direction: column;
   }
 
+  .FeatureHeader p{
+    text-align: center;
+  }
+  .HeroHeader p{
+    text-align: center;
+  }
+  .CompanyH2{
+    text-align: center;
+  }
+
   .HeroP{
     display: flex;
     justify-content: center;
@@ -738,56 +853,6 @@ h2{
     height: 55px;
     font-size: 10px;
   }
-}
-
-
-.TestimonialSect{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 1440px;
-  min-height: 840px;
-}
-
-.TestimonialConts{
-  width:573px;
-  height:429px;
-  background-color: #F7F7F6;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-}
-
-.pic1{
-
-  position:relative;
-  width: 176px;
-  height: 176px;
-  display:flex;
-  top:-78px;
-
-
-  background: url(./images/testPic.png);
-}
-
-.pic2{
-  position: relative;
-
-  width: 176px;
-  height: 176px;
-  display:flex;
-  top:-78px;
-
-
-  background: url(./images/testPic2.png);
-}
-
-.TestimonialDesc{
-  position:relative;
-  top:-60px;
 }
 
 .FAQsection{
