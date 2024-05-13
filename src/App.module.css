@@ -566,7 +566,307 @@ h2{
   font-size: 20px;
 }
 
+.FAQsection{
+  min-height:610px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.FAQHeaders{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.FAQLink{
+  text-decoration: none;
+}
+.FAQLink:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.FAQbtn{
+  background-color: #f7f7f6;
+  height: 76px;
+  width:672px;
+  margin-bottom:16px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  border-style: none;
+
+}
+
+.ClickableFAQ{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 93px;
+}
+
+.FAQCollapsible{
+  border-style:none;
+  background-color: #F7F7F6;
+  margin-left: 26px;
+}
+
+.FAQHeaders h2{
+  font-size: 20px;
+  color: rgb(236, 178, 46);
+}
+
+.FAQHeaders h1{
+  color: black;
+  font-family: 'Poppins';
+  font-size: 44px;
+  font-weight: bold;
+}.FAQHeaders p{
+  color: #646464;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+
+}
+.FAQHeaders a{
+    color: rgb(66, 133, 244);
+    font-size: 28px;
+    font-family: 'Poppins';
+    display: flex;
+    margin-top: 46px;
+}
+
+.OpenedClickable{
+  width:672px;
+  height:160px;
+  display:flex;
+  flex-direction:column;
+  background-color:#f7f7f6;
+  margin-bottom:16px;
+  align-items:flex-start;
+}
+
+.FAQOpenedHeader{
+  margin-left:100px;
+  font-family:'Poppins';
+  font-size:18px; 
+  color:#646464;
+}
+
+
+.DiscoverLayout{
+  min-height: 545px;
+  background-color:#773977;
+  border-radius: 0px 0px 88px 88px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.TryForFree{
+  width:375px;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  font-family:'Poppins';
+  margin-right: 38px;
+  border-style: none;
+  border-radius:5px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.TryForFree:hover{
+  cursor:pointer;
+  opacity: 50%;
+  transition-timing-function: ease-in-out;
+  transition-duration:0.3s;
+}
+
+.TalkToSales{
+  width:375px;
+  height: 98px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #773977;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color:white;
+  font-size:32px;
+  font-family:'Poppins';
+  color:white;
+
+}
+
+.TalkToSales:hover{
+  transition-timing-function: ease-in-out;
+  transition-duration:0.3s;
+  opacity:80%;
+  background-color: #F7F7F6;
+  color:#773977;
+  cursor:pointer;
+}
+
+.DiscoverBtn{
+  display: flex;
+  flex-direction: row;
+}
+
+.FooterLayout{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.FooterContent{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerLinks{
+  margin-top:16px;
+  margin-right: 13px;
+  padding:0
+}
+
+.FooterFirst{
+  display:flex; 
+  flex-direction:column; 
+  margin-right:61px;
+}
+.FooterFirst p{
+  font-family:'Poppins'; 
+  color:#646464; 
+  font-size:18px;
+  margin-top:16px;
+}
+
+.FooterSecond{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:35px;
+}
+.FooterThird{
+  display:flex; 
+  flex-direction:column;
+  margin-left:71px;
+  margin-top:12px;
+}
+
 @media (max-width: 770px){
+  .FooterThird{
+    margin-left: 40px;
+  }
+  .FooterSecond{
+    margin-top: 30px;
+  }
+  .FooterContent{
+    margin-top: 30px;
+  }
+
+  .FooterFirst{
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .FooterFirst p{
+  font-family:'Poppins'; 
+  color:#646464; 
+  font-size:11px;
+  margin-top:16px;
+  }
+  .FooterLayout{
+    max-width: 770px;
+
+  }
+
+  .FooterContent{
+    flex-direction: column;
+  }
+  .TryForFree, .TalkToSales{
+    width: 300px;
+    margin-right: 0px;
+
+  }
+  .TryForFree{
+    margin-bottom: 20px;
+  }
+  .DiscoverBtn{
+    display: flex;
+    flex-direction: column;
+  }
+  .DiscoverLayout{
+    max-width: 770px;
+  }
+
+  .FAQOpenedHeader{
+    margin-left: 50px;
+    font-size: 11px;
+    text-align:center;
+    margin-top: 10px;
+    
+  }
+  .OpenedClickable{
+    width: 400px;
+  }
+
+  .ClickableFAQ{
+    margin-left: 0px;
+  }
+
+  .FAQbtn{
+    width: 400px;
+    justify-content: center;
+  }
+
+  .FAQHeaders h2{
+    font-size: 16px;
+  }
+  .FAQHeaders h1{
+    font-size: 30px;
+  }
+
+  .FAQHeaders p{
+    font-size: 18px;
+  }
+
+  .FAQHeaders a{
+    font-size: 23px;
+  }
+  .FAQHeaders{
+    align-items: center;
+    text-align: center;
+  }
+  .FAQsection{
+    max-width: 770px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .FeatureBoxLayout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
   .ClientHeader{
     display: flex;
     flex-direction: column;
@@ -695,6 +995,99 @@ h2{
 }
 
 @media (max-width: 475px) {
+  .FooterThird{
+    margin-left: 40px;
+  }
+  .FooterSecond{
+    margin-top: 30px;
+  }
+  .FooterContent{
+    margin-top: 30px;
+  }
+
+  .FooterFirst{
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .FooterFirst p{
+  font-family:'Poppins'; 
+  color:#646464; 
+  font-size:11px;
+  margin-top:16px;
+  }
+  .FooterLayout{
+    max-width: 770px;
+
+  }
+
+  .FooterContent{
+    flex-direction: column;
+  }
+
+  .TryForFree, .TalkToSales{
+    width: 250px;
+    margin-right: 0px;
+
+  }
+  .TryForFree{
+    margin-bottom: 20px;
+  }
+  .DiscoverBtn{
+    display: flex;
+    flex-direction: column;
+  }
+  .DiscoverLayout{
+    max-width: 475px;
+  }
+
+  .FAQOpenedHeader{
+    margin-left: 25px;
+    font-size: 10px;
+    text-align:center;
+    margin-top: 10px;
+    
+  }
+  .OpenedClickable{
+    width: 330px;
+  }
+
+  .ClickableFAQ{
+    margin-left: 0px;
+  }
+
+  .FAQbtn{
+    width: 330px;
+    justify-content: center;
+  }
+
+  .FAQHeaders h2{
+    font-size: 13px;
+  }
+  .FAQHeaders h1{
+    font-size: 25px;
+  }
+
+  .FAQHeaders p{
+    font-size: 15px;
+  }
+
+  .FAQHeaders a{
+    font-size: 20px;
+  }
+  .FAQHeaders{
+    align-items: center;
+    text-align: center;
+  }
+  .FAQsection{
+    max-width: 475px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+  }
 
   .TestimonialConts{
     width:350px
@@ -853,134 +1246,4 @@ h2{
     height: 55px;
     font-size: 10px;
   }
-}
-
-.FAQsection{
-  min-width: 1440px;
-  min-height:610px;
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.FAQHeaders{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.FAQLink{
-  text-decoration: none;
-}
-.FAQLink:hover{
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.FAQbtn{
-  background-color: #f7f7f6;
-  height: 76px;
-  width:672px;
-  margin-bottom:16px;
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-  border-style: none;
-
-}
-
-.ClickableFAQ{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-left: 93px;
-}
-
-.FAQCollapsible{
-  border-style:none;
-  background-color: #F7F7F6;
-  margin-left: 26px;
-}
-
-.DiscoverLayout{
-  min-width: 1440px;
-  min-height: 545px;
-  background-color:#773977;
-  border-radius: 0px 0px 88px 88px;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.TryForFree{
-  width:375px;
-  height: 98px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  color: black;
-  font-family:'Poppins';
-  margin-right: 38px;
-  border-style: none;
-  border-radius:5px;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.TryForFree:hover{
-  cursor:pointer;
-  opacity: 50%;
-  transition-timing-function: ease-in-out;
-  transition-duration:0.3s;
-}
-
-.TalkToSales{
-  width:375px;
-  height: 98px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #773977;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 5px;
-  border-color:white;
-  font-size:32px;
-  font-family:'Poppins';
-  color:white;
-
-}
-
-.TalkToSales:hover{
-  transition-timing-function: ease-in-out;
-  transition-duration:0.3s;
-  opacity:80%;
-  background-color: #F7F7F6;
-  color:#773977;
-  cursor:pointer;
-}
-
-.FooterLayout{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 1440px;
-  min-height: 500px;
-}
-
-.FooterContent{
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.footerLinks{
-  margin-top:16px;
-  margin-right: 13px;
-  padding:0
 }

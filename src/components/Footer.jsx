@@ -5,11 +5,11 @@ function FooteR(){
     return(
         <footer className={styles.FooterLayout}>
             <div className={styles.FooterContent}>
-                <div style={{display:'flex', flexDirection:'column', marginRight:61}}>
+                <div className={styles.FooterFirst}>
                     <div>
                         <img src={THub} alt="Taskhub logo" />
                     </div>
-                    <p style={{fontFamily:'Poppins', color:'#646464', fontSize:18, marginTop:16}}>
+                    <p>
                         The point of using Lorem Ipsum is that it has more-or-less<br/>
                         normal distribution of letters, as opposed to using 'Content<br/>
                         here, content here', making it look like readable English.
@@ -97,7 +97,7 @@ function FooteR(){
                         </li>
                     </ul>
                 </div>
-                <div style={{display:'flex', flexDirection:'column', marginBottom:35}}>
+                <div className={styles.FooterSecond}>
                     <div style={{display:'flex', flexDirection:'column', marginBottom:19}}>
                         <h2>
                             About Taskhub
@@ -120,7 +120,7 @@ function FooteR(){
                         </a>
                     </div>
                 </div>
-                <div style={{display:'flex', flexDirection:'column',marginLeft:71, marginTop:12}}>
+                <div className={styles.FooterThird}>
                     <div style={{display:'flex', flexDirection:'column', marginBottom:19}}>
                         <h2>
                             Apps

@@ -4,20 +4,20 @@ function Questions(){
     return(
         <section className={styles.FAQsection}>
             <div className={styles.FAQHeaders}>
-                <h2 style={{color:"#ECB22E", fontSize:20}}>
+                <h2>
                     Question & Answers
                 </h2>
-                <h1 style={{color:'black', fontFamily:'Poppins', fontSize:44,fontWeight:'bold'}}>
+                <h1>
                     Frequently Asked<br/>
                     Questions
                 </h1>
                 <h2 style={{fontSize:32, fontFamily:'Poppins', marginTop:36}}>
                     Don't get answer
                 </h2>
-                <p style={{fontSize:24, fontFamily:'Poppins', color:'#646464', marginTop:10}}>
+                <p>
                     We will answer you in less then 24<br/>hours
                 </p>
-                <a href="#" style={{color:'#4285f4', fontSize:28, fontFamily:'Poppins', display:"flex", marginTop:46}} className={styles.FAQLink}>
+                <a href="#" className={styles.FAQLink}>
                     Leave us a Message 
                     <span style={{marginTop:7, marginLeft:3}} className={styles.FAQLink}>
                         <svg width="29" height="27" viewBox="0 0 29 27" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,7 +56,7 @@ function Questions(){
                         What is TaskHub
                     </p>
                 </div>
-                <div style={{width:672, height:160, display:'flex', flexDirection:'column',backgroundColor:'#f7f7f6', marginBottom:16, alignItems:'flex-start'}}>
+                <div className={styles.OpenedClickable}>
                     <div style={{display:'flex', flexDirection:'row',marginTop:26}}>
                         <button className={styles.FAQCollapsible}>
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +68,7 @@ function Questions(){
                             What is TaskHub
                         </p>
                     </div>
-                    <div style={{marginLeft:100, fontFamily:'Poppins', fontSize:18, color:'#646464'}}>
+                    <div className={styles.FAQOpenedHeader}>
                         <p>
                         The point of using Lorem Ipsum is that it has a more-or-less<br/>
                         normal distribution of letters, as opposed to using 'Content<br/>

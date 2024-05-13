@@ -6,7 +6,7 @@ const Discovery = () => {
                 <div >
                     <h1 style={{display:'flex', textAlign:'center', marginBottom:69}}>Discover what you can achieve<br/> with TaskHub.</h1>
                 </div>
-                <div style={{display:'flex', flexDirection:'row'}}>
+                <div className={styles.DiscoverBtn}>
                     <button className={styles.TryForFree}>
                         Try For Free
                     </button>
